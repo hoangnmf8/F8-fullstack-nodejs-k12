@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+@font-face {
+	font-family: myFont;
+	src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* CSS External */
+h1 {
+	width: 300px;
+	height: 200px;
+	background-color: red;
+}
+
+#description {
+	background-color: pink;
+}
+
+.description {
+	font-size: 30px;
+	font-weight: 400;
+	width: 400px;
+	height: 400px;
+	/* font-style: italic; */
+	/* font-family: "Itim", cursive; */
+	font-family: myFont, sans-serif;
+	/* text-decoration: line-through; */
+	/* text-transform: uppercase; */
+	text-align: center;
+	vertical-align: auto;
+}
+
+a {
+	text-decoration: none;
+}
