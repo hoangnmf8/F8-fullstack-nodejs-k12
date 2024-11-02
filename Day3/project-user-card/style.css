@@ -1,51 +1,23 @@
+/* ctrl + / */
+
+/* Common: Begin */
+
 html {
 	font-size: 16px;
 	font-family: "Poppins", sans-serif;
+	color: #1c2b62;
 }
 
 body {
 	background-color: #e6effa;
 }
 
-.left-content,
-.right-content {
-	display: inline-block;
+section {
+	margin-bottom: 28px;
 }
 
-.user-card {
-	width: 560px;
-	background-color: #ffffff;
-}
-
-.left-content {
-	width: 92px;
-	background-color: #e6effa;
-	padding: 11px;
-	border-radius: 50%;
-	img {
-		width: 100%;
-		border-radius: 50%;
-	}
-	vertical-align: top;
-}
-
-.right-content {
-	width: calc(560px - 92px - 11px - 11px - 16px);
-	background-color: yellow;
-	margin-left: 10px;
-	span {
-		vertical-align: middle;
-	}
-}
-
-.description {
-	font-size: 18px;
-}
-
-.user-card-icon {
-	font-size: 32px;
-	display: inline-block;
-	vertical-align: middle;
+img {
+	width: 100%;
 }
 
 ul {
@@ -54,4 +26,65 @@ ul {
 
 li {
 	list-style-type: none;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+button {
+	padding: 10px;
+	border: 2px solid #c4cadf;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all ease-in-out 0.5s;
+}
+
+button:hover {
+	background-color: #c4cadf;
+}
+
+/* Common: End */
+
+.left-content,
+.right-content {
+	display: inline-block;
+}
+
+.user-card {
+	width: 460px;
+	background-color: #ffffff;
+	padding: 50px;
+	border-radius: 12px;
+	margin: 100px auto 0;
+}
+
+.left-content {
+	width: 92px;
+	background-color: #e6effa;
+	padding: 11px;
+	border-radius: 50%;
+	img {
+		border-radius: 50%;
+	}
+	vertical-align: top;
+}
+
+.right-content {
+	width: calc(560px - 92px - 11px - 11px - 16px - 50px - 50px);
+	margin-left: 10px;
+	span {
+		vertical-align: middle;
+	}
+}
+
+.description {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.user-card-icon {
+	font-size: 32px;
+	display: inline-block;
+	vertical-align: middle;
 }
