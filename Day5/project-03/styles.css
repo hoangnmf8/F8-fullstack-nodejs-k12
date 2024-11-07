@@ -1,0 +1,66 @@
+/* Common CSS: BEGIN */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", serif;
+  color: #1F1D2A;
+}
+
+body {
+  margin: 0;
+  background-color: #F0E8E2;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1F1D2A;
+}
+
+.btn {
+  padding: 10px 28px;
+  border: 1px solid #1F1D2A;
+  border-radius: 6px;
+}
+
+.padding-left-right-120 {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+/* Common CSS: END */
+
+/* Header: BEGIN */
+header {
+  width: 100%;
+  display: flex;
+  margin: 40px auto 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a {
+  font-size: 32px;
+}
+header nav ul {
+  display: flex;
+}
+
+header li a {
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+/* Header: END */

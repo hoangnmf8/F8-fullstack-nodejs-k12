@@ -17,6 +17,7 @@ html {
   font-size: 16px;
   font-family: "Poppins", serif;
   font-weight: 400;
+  color: #151B32;
 }
 
 /* Common: END */
@@ -36,6 +37,7 @@ h1 {
 
 header {
   margin-bottom: 70px;
+  width: 100%;
 }
 
 form, nav, ul, li {
@@ -93,11 +95,21 @@ header a {
   padding: 24px;
   border-radius: 16px;
   background-color: white;
+  margin: 12px;
+  transition: all ease-in-out 0.5s;
   img {
     width: 97px;
     height: 97px;
     border-radius: 50%;
+    vertical-align: top;
+    margin-right: 10px;
   }
+
+  h2 {
+    font-size: 18px;
+    font-family: "Merriweather", sans-serif;
+  }
+
   li a {
     padding: 2px 8px;
     border: 1px solid #BFC8E6;
@@ -113,8 +125,12 @@ header a {
   }
 
   .content {
-    width: calc(327px - 97px - 16px - 48px);
+    width: calc(327px - 97px - 16px - 48px - 2px);
     display: inline-block;
+  }
+
+  &:hover {
+    border: 1px solid #BFC8E6;
   }
 }
 
