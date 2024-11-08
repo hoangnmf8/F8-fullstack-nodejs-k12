@@ -16,6 +16,10 @@ body {
   background-color: #F0E8E2;
 }
 
+section {
+  margin-bottom: 100px;
+}
+
 ul, ol {
   padding: 0;
   margin: 0;
@@ -39,6 +43,11 @@ a {
 .padding-left-right-120 {
   padding-left: 120px;
   padding-right: 120px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 /* Common CSS: END */
 
@@ -64,3 +73,37 @@ header li a {
 }
 
 /* Header: END */
+
+/* Banner: BEGIN */
+.banner {
+  min-height: 300px;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  padding-right: 60px;
+  h1 {
+    font-size: 55px;
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 50px;
+    color: #9B948E;
+  }
+  .btn-banner {
+    background-color: #96C67F;
+    padding: 20px 22px;
+  }
+}
+
+.slides{
+  width: 50%;
+  img {
+    aspect-ratio: 1 / 1;
+    max-width: 500px;
+    border-radius: 50%;
+  }
+}
+
+/* Banner: END */

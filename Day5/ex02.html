@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .box-1{
+      background-color: orange;
+      width: 100%;
+      height: 100px;
+      margin-bottom: 100px;
+    }
+
+    .box-2{
+      margin-top: 50px;
+      background-color: greenyellow;
+      width: 100%;
+      height: 100px;
+    }
+
+    .box-parent {
+      width: 100%;
+      height: 100px;
+      background-color: aqua;
+      /* border: 2px solid blue; */
+    }
+
+    .box-child{
+      width: 200px;
+      height: 60px;
+      background-color: violet;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box-1">Box 1 - margin collapse</div>
+  <div class="box-2">Box 2</div>
+
+  <div class="box-parent">
+    <div class="box-child">child</div>
+  </div>
+
+  <ol>
+    <li>1. Margin 2 thẻ liền kề vào cùng 1 vùng</li>
+    <li>2 thẻ cha-con mà thẻ cha không có border thì margin ở thẻ con sẽ được gộp vào thẻ cha</li>
+    <li>Thẻ cha chỉ có duy nhất 1 nội dung là thẻ con thì margin của thẻ con cũng được gộp vào thành margin của thẻ cha</li>
+  </ol>
+  
+</body>
+</html>
