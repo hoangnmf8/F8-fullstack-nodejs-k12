@@ -1,0 +1,16 @@
+.about-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+}
+
+.article:nth-child(odd) {
+	flex-direction: column-reverse;
+}

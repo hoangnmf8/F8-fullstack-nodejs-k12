@@ -1,5 +1,5 @@
 **Học viên nộp bài tập tại đây.**
 
-**Yêu cầu:** Gửi link Github và link Deploy (vercel).
+**Yêu cầu:** Gửi link Github và link Deploy (Vercel).
 
-**Deadline:** 09:00:00 ngày 05/11/2024
+**Deadline:** 09:00:00 ngày 09/11/2024
