@@ -9,8 +9,12 @@
 .article {
 	display: flex;
 	flex-direction: column;
+	color: #3a3a3a;
 }
 
 .article:nth-child(odd) {
 	flex-direction: column-reverse;
+}
+
+h1 {
 }
