@@ -12,9 +12,10 @@
 	color: #3a3a3a;
 }
 
-.article:nth-child(odd) {
+/* .article:nth-child(odd) {
 	flex-direction: column-reverse;
-}
+} */
 
-h1 {
+.article:nth-child(odd) img {
+	order: -1;
 }

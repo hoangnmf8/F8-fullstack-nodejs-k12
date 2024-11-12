@@ -12,7 +12,7 @@
 			.container {
 				display: flex;
 				flex-direction: row;
-				/* flex-wrap: wrap; */
+				flex-wrap: wrap;
 				gap: 30px;
 				/* flex-flow: row wrap; */
 				justify-content: flex-start;
@@ -27,25 +27,28 @@
 				border: 2px solid red;
 				height: 60px;
 				/* width: 100px; */
-				flex-basis: 200px;
-				max-width: 250px;
+				/* flex-basis: 200px; */
+				/* max-width: 250px; */
 				/* min-width: 100px; */
 				/* flex-shrink: 1; */
+				flex: 1 1 200px;
 			}
 
 			.item-1 {
-				flex-grow: 1;
-				flex-shrink: 1;
+				/* flex-grow: 1;
+				flex-shrink: 1; */
+				flex: 1 1 200px;
+				/* flex-grow flex-shrink flex-basis */
 			}
 
 			.item-2 {
-				flex-grow: 1;
-				flex-shrink: 2;
+				/* flex-grow: 2;
+				flex-shrink: 2; */
 			}
 
 			.item-3 {
-				flex-grow: 1;
-				flex-shrink: 3;
+				/* flex-grow: 3;
+				flex-shrink: 3; */
 			}
 		</style>
 	</head>
