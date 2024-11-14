@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-weight: 400;
+	font-family: "Poppins", serif;
+}
+
+.container {
+	padding-left: 12rem;
+	padding-right: 12rem;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	border-radius: 99;
+	background-color: #171100;
+	padding: 1em 2em;
+}
+
+header {
+	min-height: 60px;
+	width: 100%;
+	background-color: #fffcf4;
+	padding: 64px 0;
+}
+
+#hero {
+	background-color: #fffcf4;
+	min-height: 500px;
+}
+
+#hero .left-content {
+	padding-right: 100px;
+	position: relative;
+	.course-avatar {
+		width: 470px;
+		height: 685px;
+	}
+}
+
+.courses-list {
+	position: absolute;
+	bottom: 48px;
+	right: -100px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+	padding: 28px 58px 28px 24px;
+}
+
+.course-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+	.course-icon {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.course-item p:first-child {
+	font-size: 14px;
+	color: #5f5b53;
+	line-height: 26px;
+}
+
+.course-item p:last-child {
+	font-size: 18px;
+	font-weight: 600;
+	color: #171100;
+	line-height: 30px;
+}

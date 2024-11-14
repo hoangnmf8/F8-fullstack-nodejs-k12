@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Position</title>
+		<style>
+			.box {
+				border: 1px dashed red;
+				width: 100px;
+				height: 100px;
+				background-color: yellowgreen;
+				position: static;
+			}
+
+			.box-1 {
+				position: relative;
+				top: 20px;
+				left: 20px;
+				z-index: 3;
+			}
+
+			.box-2 {
+				position: relative;
+				bottom: 40px;
+				left: 40px;
+			}
+
+			.box-3 {
+				position: relative;
+				bottom: 60px;
+				left: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box box-1">Box 1</div>
+		<div class="box box-2">Box 2</div>
+		<div class="box box-3">Box 3</div>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, veritatis.</p>
+	</body>
+</html>
