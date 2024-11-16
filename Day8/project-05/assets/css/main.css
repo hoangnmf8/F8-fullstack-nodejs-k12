@@ -6,11 +6,20 @@ html {
 	font-size: 62.5%;
 	font-weight: 400;
 	font-family: "Poppins", serif;
+	color: #171100;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+main {
+	padding: 120px 0;
 }
 
 .container {
-	padding-left: 12rem;
-	padding-right: 12rem;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 
 .d-flex {
@@ -25,68 +34,67 @@ html {
 	align-items: center;
 }
 
-a {
-	text-decoration: none;
+.btn {
+	color: #fff;
+	border-radius: 99px;
+	border: none;
+	transition: all ease-in-out 0.3s;
+	font-weight: 600;
 }
 
-.btn {
-	border-radius: 99;
+.btn--small {
 	background-color: #171100;
-	padding: 1em 2em;
+	padding: 12px 24px;
+	font-size: 16px;
 }
+
+.btn--medium {
+	background-color: #171100;
+	padding: 14px 28px;
+	font-size: 16px;
+}
+
+.btn--medium:hover {
+	background-color: #ffb900;
+}
+
+.btn--big {
+	background-color: #171100;
+	padding: 18px 36px;
+	font-size: 18px;
+}
+
+.yellow {
+	color: #ffb900;
+}
+
+/* HEADER: BEGIN */
 
 header {
-	min-height: 60px;
+	background-color: #fffcf4;
+	padding: 36px 0;
+	position: fixed;
+	top: 0;
 	width: 100%;
-	background-color: #fffcf4;
-	padding: 64px 0;
 }
 
-#hero {
-	background-color: #fffcf4;
-	min-height: 500px;
+header .logo {
+	font-size: 24px;
+	font-weight: 700;
 }
 
-#hero .left-content {
-	padding-right: 100px;
-	position: relative;
-	.course-avatar {
-		width: 470px;
-		height: 685px;
-	}
-}
-
-.courses-list {
-	position: absolute;
-	bottom: 48px;
-	right: -100px;
-	display: inline-block;
-	background-color: #fff;
-	border-radius: 12px;
-	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
-	padding: 28px 58px 28px 24px;
-}
-
-.course-item {
+header .nav__inner {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: center;
-	gap: 16px;
-	.course-icon {
-		width: 48px;
-		height: 48px;
+	gap: 20px;
+	.nav-item {
+		padding: 12px;
+		color: #5f5b53;
+		&:hover {
+			font-weight: 600;
+			color: #171100;
+		}
 	}
 }
-
-.course-item p:first-child {
-	font-size: 14px;
-	color: #5f5b53;
-	line-height: 26px;
-}
-
-.course-item p:last-child {
-	font-size: 18px;
-	font-weight: 600;
-	color: #171100;
-	line-height: 30px;
-}
+/* HEADER: END */
