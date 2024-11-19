@@ -88,13 +88,56 @@ header .nav__inner {
 	justify-content: flex-end;
 	align-items: center;
 	gap: 20px;
+	min-width: 600px;
 	.nav-item {
 		padding: 12px;
 		color: #5f5b53;
-		&:hover {
-			font-weight: 600;
-			color: #171100;
-		}
+		position: relative;
+	}
+
+	.nav-item:hover {
+		font-weight: 600;
+		color: #171100;
+	}
+
+	.nav-item::after {
+		content: "";
+		background-color: #171100;
+		display: inline-block;
+		width: 0;
+		height: 4px;
+		border-radius: 99px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transition: all ease-in-out 0.5s;
+	}
+
+	.nav-item:hover::after {
+		width: 100%;
 	}
 }
 /* HEADER: END */
+
+/* FOOTER: BEGIN */
+
+footer {
+	background-color: #2e2100;
+	padding: 96px 0 24px;
+	color: #fff;
+}
+
+.footer__inner {
+	gap: 68px;
+}
+
+.footer-col {
+	border: 2px solid red;
+	flex: 1 1 200px;
+}
+
+.footer-col:first-child,
+.footer-col:last-child {
+	flex-grow: 3;
+}
+/* FOOTER: END */
