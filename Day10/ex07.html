@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.title {
+				text-align: center;
+				position: relative;
+			}
+
+			.title::before,
+			.title::after {
+				content: "";
+				position: absolute;
+				bottom: -6px;
+			}
+
+			.title::before {
+				border-bottom: 2px solid #555;
+				left: 35%;
+				right: 35%;
+			}
+
+			.title::after {
+				border-bottom: 2px dashed #555;
+				left: 15%;
+				right: 15%;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<h2 class="title">About Us</h2>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+section p {
+}
+
+header p {
+}
+
+p {
+	color: green;
+}
+
+div.content > p.desc {
+	background-color: yellow;
+}
+
+p.desc {
+	background-color: green;
+}
+
+p#example {
+	color: aqua;
+	/* background-color: red; */
+}

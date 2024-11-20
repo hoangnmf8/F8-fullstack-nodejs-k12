@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			p {
+				text-indent: 30px;
+			}
+
+			p::after {
+				content: "Noi dung sau the p";
+				background-color: green;
+				display: inline-block;
+				padding: 12px;
+				margin: 12px;
+				text-indent: 0;
+			}
+			p::first-line {
+				font-weight: 700;
+			}
+			p::first-letter {
+				font-size: 44px;
+			}
+			input[name="username"]::placeholder {
+				color: red;
+			}
+
+			li {
+				color: red;
+			}
+
+			li:nth-child(odd)::marker {
+				color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Hoang ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet deserunt dolor voluptates autem officiis
+			odio dignissimos veritatis quod praesentium?
+		</p>
+
+		<input type="text" name="username" id="" placeholder="username" />
+
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	</body>
+</html>
