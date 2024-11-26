@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+			}
+
+			.container {
+				width: 1170px;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				display: grid;
+				grid-template-areas:
+					"header header header header"
+					"nav nav nav nav"
+					"left-content main-content main-content right-content"
+					"footer footer footer footer";
+				grid-auto-rows: minmax(100px, auto);
+				gap: 10px;
+			}
+
+			header {
+				grid-area: header;
+				background-color: bisque;
+			}
+
+			nav.main-menu {
+				grid-area: nav;
+				background-color: yellow;
+			}
+
+			.left-content {
+				grid-area: left-content;
+				background-color: green;
+			}
+
+			.main-content {
+				grid-area: main-content;
+				background-color: greenyellow;
+			}
+
+			.right-content {
+				grid-area: right-content;
+				background-color: orange;
+			}
+
+			footer {
+				grid-area: footer;
+				background-color: pink;
+			}
+
+			.products-list {
+				/* display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+				flex-wrap: wrap;
+				align-items: flex-start; */
+
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+			}
+
+			.product-item {
+				background-color: red;
+				width: 200px;
+				flex-grow: 1;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>Header</header>
+			<nav class="main-menu">Thanh dieu huong</nav>
+			<div class="left-content">Left content</div>
+			<div class="main-content">
+				<h2>Danh sach san pham</h2>
+				<div class="products-list">
+					<div class="product-item">Item 1</div>
+					<div class="product-item">Item 2</div>
+					<div class="product-item">
+						Item 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, distinctio!
+					</div>
+					<div class="product-item">Item 4</div>
+					<div class="product-item">Item 5</div>
+					<div class="product-item">Item 6</div>
+					<div class="product-item">Item 6</div>
+				</div>
+			</div>
+			<div class="right-content">Right content</div>
+			<footer>Footer</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.container {
+				display: grid;
+				border: 2px solid red;
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(4, 50px);
+			}
+
+			.item {
+				border: 2px dashed orange;
+			}
+
+			.item-1 {
+				grid-column: 1 / span 3;
+				grid-row: 1 / span 3;
+				background-color: rgba(0, 255, 0, 1);
+				z-index: 1;
+			}
+
+			/* -infinite -2 -1 unset(auto) 0 1 2 3 infinite */
+
+			.item-2 {
+				grid-column: 2 / span 3;
+				grid-row: 2 / span 3;
+				background-color: rgba(255, 0, 0, 1);
+				/* z-index: -1; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-1">
+				Item-1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolorum molestiae, eaque nostrum facere
+				placeat ea corrupti accusamus ratione deserunt, nemo sit! Impedit dolores vitae dolore optio aliquam incidunt ea
+				voluptatibus nisi eius debitis est beatae, inventore error quasi repudiandae.
+			</div>
+			<div class="item item-2">
+				Item-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis similique perspiciatis. Nemo cumque
+				at rerum error, exercitationem, amet enim totam veniam quod labore deserunt et voluptatibus, molestiae dolor
+				voluptatum! Voluptas id maxime ea molestiae, aliquam error quia exercitationem reiciendis.
+			</div>
+			<div class="item item-3">Item-3</div>
+			<div class="item item-4">Item-4</div>
+			<div class="item item-5">Item-5</div>
+		</div>
+	</body>
+</html>

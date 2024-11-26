@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.container {
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				justify-content: center;
+				/* justify-content sẽ sắp xếp các cột. */
+
+				align-content: center;
+				/* align-content sẽ sắp xếp các hàng. */
+				/* justify-items: flex-end;
+				align-items: flex-end; */
+				place-items: center;
+			}
+
+			.item {
+				border: 1px dashed orange;
+				/* width: 50px;
+				height: 50px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container auto--fill">
+			<div class="item">Item 1</div>
+			<div class="item">Item 2</div>
+			<div class="item">Item 3</div>
+			<div class="item">Item 4</div>
+			<div class="item">Item 5</div>
+			<div class="item">Item 6</div>
+			<div class="item">Item 7</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.container {
+				display: grid;
+				/* grid-template-columns: 1fr 2fr 1fr; */
+				grid-template-columns: repeat(3, 1fr 100px);
+				/* grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr; */
+				/* grid-template-columns: repeat(3, 1fr 2fr); */
+
+				/* fraction */
+				/* grid-template-rows: 2fr 1fr; */
+				grid-template-rows: 100px 1fr 2fr;
+				border: 2px solid red;
+				/* row-gap: 20px;
+				column-gap: 30px; */
+				/* row-gap column-gap*/
+				/* gap: 20px 30px; */
+			}
+
+			.item {
+				border: 2px dashed orange;
+				background-color: #ccc;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item item-1">Item-1</div>
+			<div class="item item-2">Item-2</div>
+			<div class="item item-3">Item-3</div>
+			<div class="item item-4">Item-4</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+			<div class="item item-5">Item-5</div>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laboriosam provident quibusdam quaerat. Incidunt
+			sit distinctio tempore sed nemo? Minima voluptates ipsum ducimus amet? Amet maxime delectus doloremque voluptatem
+			recusandae.
+		</p>
+	</body>
+</html>
