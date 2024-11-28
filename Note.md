@@ -2,4 +2,4 @@
 
 **Yêu cầu:** Gửi link Github và link Deploy (Vercel).
 
-**Deadline:** 09:00:00 ngày 16/11/2024
+**Deadline:** 09:00:00 ngày 28/11/2024

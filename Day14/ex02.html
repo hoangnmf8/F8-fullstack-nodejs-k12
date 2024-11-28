@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BEM</title>
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.btn {
+				color: #fff;
+				border-radius: 8px;
+				border: 1px solid transparent;
+				transition: all ease-in-out 0.3s;
+				cursor: pointer;
+				font-weight: 700;
+			}
+
+			.btn:hover {
+				opacity: 0.7;
+			}
+
+			.btn.btn--small {
+				padding: 8px 12px;
+				font-size: 14px;
+			}
+
+			.btn.btn--medium {
+				padding: 12px 18px;
+				font-size: 16px;
+			}
+
+			.btn.btn--big {
+				padding: 16px 32px;
+				font-size: 18px;
+			}
+
+			.btn.btn--primary {
+				background-color: blue;
+			}
+
+			.btn.btn--secondary {
+				background-color: violet;
+			}
+
+			.btn.btn--warning {
+				background-color: orange;
+			}
+
+			.btn__icon {
+				font-size: 16px;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn btn--small">Small button</button>
+		<button class="btn btn--medium">Medium button</button>
+		<button class="btn btn--big">Big button</button>
+		<button class="btn btn--big btn--primary">
+			<i class="bx bxl-xing btn__icon"></i>
+			<span>Big button</span>
+		</button>
+		<button class="btn btn--big btn--secondary">Big button</button>
+		<button class="btn btn--big btn--warning">Big button</button>
+	</body>
+</html>
