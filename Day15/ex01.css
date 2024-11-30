@@ -1,0 +1,35 @@
+header {
+	background-color: yellow;
+	padding: 40px 0;
+}
+
+main {
+	min-height: 100vh;
+	color: #000;
+}
+
+footer {
+	background-color: green;
+	padding: 40px 0;
+}
+
+@media only print {
+	main {
+		color: red;
+	}
+	footer {
+		background-color: #000;
+	}
+}
+
+/* @media only screen and (max-width: 992px) {
+	header {
+		background-color: greenyellow;
+	}
+} */
+
+@media only screen and (width <= 992px) {
+	header {
+		background-color: greenyellow;
+	}
+}

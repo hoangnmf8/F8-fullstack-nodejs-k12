@@ -68,14 +68,31 @@
 				padding: 24px 12px;
 			}
 
+			header .menu-item:hover::before {
+				content: "";
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 60px;
+				bottom: 0;
+				background-color: rgba(0, 0, 0, 0.3);
+				z-index: 1;
+			}
+
 			header .menu-item:hover::after {
 				content: "";
 				position: absolute;
 				left: 0;
+				/* right: 0; */
 				top: 100%;
 				width: 160px;
 				height: 26px;
 				background-color: green;
+			}
+
+			header .menu-item:last-child:hover::after {
+				right: 0;
+				left: unset;
 			}
 
 			header .menu__sub-menu {
@@ -83,12 +100,18 @@
 				position: absolute;
 				top: calc(100% + 24px);
 				left: 0;
+				/* right: 0; */
 				background-color: red;
 				padding: 12px;
 				width: 160px;
 				border: 2px solid yellow;
 				/* padding-top: 24px; */
 				/* margin-top: 24px; */
+			}
+			header .menu-item:last-child .menu__sub-menu {
+				/* right: 0;
+				left: unset; */
+				left: -100%;
 			}
 
 			header .menu-item:hover .menu__sub-menu {
@@ -113,7 +136,14 @@
 						</li>
 						<li class="menu-item"><a class="menu__link" href="">Services</a></li>
 						<li class="menu-item"><a class="menu__link" href="">About</a></li>
-						<li class="menu-item"><a class="menu__link" href="">Contact</a></li>
+						<li class="menu-item">
+							<a class="menu__link" href="">Products</a>
+							<ul class="menu__sub-menu">
+								<li><a href="">Danh cho nam</a></li>
+								<li><a href="">Danh cho nu</a></li>
+								<li><a href="">Phu kien</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</div>
