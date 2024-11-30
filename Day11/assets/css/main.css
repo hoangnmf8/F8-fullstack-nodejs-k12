@@ -87,6 +87,15 @@ img {
 	width: 100%;
 }
 
+h1 {
+	text-align: center;
+	padding: 140px 0;
+	font-size: 64px;
+	font-family: "Poppins", serif;
+	color: #2d3134;
+	font-weight: 700;
+}
+
 /* header */
 header {
 	padding: 38px 0;
@@ -128,15 +137,6 @@ header {
 	background-image: url("../imgs/banner.png");
 	background-repeat: no-repeat;
 	background-position: center;
-
-	h1 {
-		text-align: center;
-		padding: 140px 0;
-		font-size: 62px;
-		font-family: "Poppins", serif;
-		color: #2d3134;
-		font-weight: 700;
-	}
 }
 /* banner */
 
