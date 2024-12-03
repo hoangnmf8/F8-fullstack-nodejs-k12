@@ -2,9 +2,6 @@
 	box-sizing: border-box;
 }
 
-:root {
-}
-
 .item {
 	background-color: yellow;
 	border: 1px dashed red;
@@ -27,7 +24,6 @@
 	flex-wrap: wrap;
 	margin-left: calc(-0.5 * var(--gutter-x));
 	margin-right: calc(-0.5 * var(--gutter-x));
-
 	margin-top: calc(-0.5 * var(--gutter-y));
 	margin-bottom: calc(-0.5 * var(--gutter-y));
 }
@@ -35,7 +31,6 @@
 .row > * {
 	padding-left: calc(0.5 * var(--gutter-x));
 	padding-right: calc(0.5 * var(--gutter-x));
-
 	padding-top: calc(0.5 * var(--gutter-y));
 	padding-bottom: calc(0.5 * var(--gutter-y));
 }
@@ -163,4 +158,52 @@
 .col-12 {
 	flex: 0 0 auto;
 	width: calc(12 * (100% / 12));
+}
+
+.product-item {
+	border: 2px solid blue;
+}
+
+.offset-1 {
+	margin-left: 8.33333333%;
+}
+
+.offset-2 {
+	margin-left: 16.66666667%;
+}
+
+.offset-3 {
+	margin-left: 25%;
+}
+
+.offset-4 {
+	margin-left: 33.33333333%;
+}
+
+.offset-5 {
+	margin-left: 41.66666667%;
+}
+
+.offset-6 {
+	margin-left: 50%;
+}
+
+.offset-7 {
+	margin-left: 58.33333333%;
+}
+
+.offset-8 {
+	margin-left: 66.66666667%;
+}
+
+.offset-9 {
+	margin-left: 75%;
+}
+
+.offset-10 {
+	margin-left: 83.33333333%;
+}
+
+.offset-11 {
+	margin-left: 91.66666667%;
 }
