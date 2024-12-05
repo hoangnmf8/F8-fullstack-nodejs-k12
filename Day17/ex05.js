@@ -6,6 +6,7 @@ let a = 10;
 console.log(a++);
 a = a + 1;
 console.log(a);
+console.log(4 ** 2);
 
 /**
  * Tiền tố: thay đổi giá trị trước sau đó thực hiện gán.
@@ -33,3 +34,9 @@ console.log(a + a * 2 - a / 3);
  * 5. Nhân, chia
  * 6. Cộng, trừ
  */
+
+let y = 100;
+
+// y = y * 2;
+y *= 2;
+console.log(y);
