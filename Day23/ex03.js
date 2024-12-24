@@ -3,9 +3,6 @@
  * findLast()
  * findIndex()
  * findLastIndex()
- * includes()
- * concat()
- * filter()
  * forEach()
  * map()
  *
