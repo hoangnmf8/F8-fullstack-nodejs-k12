@@ -12,7 +12,7 @@ const client = Object.create(user, {
 	name: { value: "Nguyen Hoang", writable: true, enumerable: true, configurable: true },
 	age: { value: 33, writable: false, enumerable: false, configurable: false },
 	address: { value: "BG", enumerable: true },
-	email: { value: "hoang@gmail.com", enumerable: true },
+	email: { value: "hoang@gmail.com" },
 	sayGoodbye: {
 		value: function () {
 			console.log("Goodbye");
@@ -28,6 +28,8 @@ client.age = 3;
 console.log(client);
 client.sayGoodbye();
 
+client.email = "1@gmail.com";
+
 for (let key in client) {
 	console.log(`${key}: ${client[key]}`);
 }
@@ -40,6 +42,10 @@ for (let key in client) {
  *
  * propertiesObject:
  *   - một object chứa những thuộc tính, phương thức thêm vào cho object.create
+ *   - value: giá trị của property (có thể là bất cứ kiểu dữ liệu nào)
+ *   - writable: default value = false, có thể ghi lại được hay không.
+ *   - enumerable: default value = false, có xuất hiện trong for...in không
+ *   - configurable: default value = false, có thể đặt lại các thiết lập cho proprety đó hay không.
  *  */
 
 // const nullObj = Object.create(null);
@@ -47,7 +53,7 @@ for (let key in client) {
 // console.log(nullObj);
 // console.log(normalObj);
 
-Object.defineProperty(client, "name", {
+Object.defineProperty(client, "email", {
 	writable: false,
 	enumerable: false,
 	configurable: true,
