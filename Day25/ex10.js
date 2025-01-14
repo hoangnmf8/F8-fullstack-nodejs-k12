@@ -34,19 +34,19 @@ for (let key in client) {
 	console.log(`${key}: ${client[key]}`);
 }
 
-/**
- * Object.create(proto, propertiesObject)
- * proto:
- *   - proto là object muốn kế thừa thuộc tính, phương thức.
- *   - null: Tạo ra object không kế thừa gì cả, không có properties.
- *
- * propertiesObject:
- *   - một object chứa những thuộc tính, phương thức thêm vào cho object.create
- *   - value: giá trị của property (có thể là bất cứ kiểu dữ liệu nào)
- *   - writable: default value = false, có thể ghi lại được hay không.
- *   - enumerable: default value = false, có xuất hiện trong for...in không
- *   - configurable: default value = false, có thể đặt lại các thiết lập cho proprety đó hay không.
- *  */
+// /**
+//  * Object.create(proto, propertiesObject)
+//  * proto:
+//  *   - proto là object muốn kế thừa thuộc tính, phương thức.
+//  *   - null: Tạo ra object không kế thừa gì cả, không có properties.
+//  *
+//  * propertiesObject:
+//  *   - một object chứa những thuộc tính, phương thức thêm vào cho object.create
+//  *   - value: giá trị của property (có thể là bất cứ kiểu dữ liệu nào)
+//  *   - writable: default value = false, có thể ghi lại được hay không.
+//  *   - enumerable: default value = false, có xuất hiện trong for...in không
+//  *   - configurable: default value = false, có thể đặt lại các thiết lập cho proprety đó hay không.
+//  *  */
 
 // const nullObj = Object.create(null);
 // const normalObj = {};
