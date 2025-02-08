@@ -42,20 +42,24 @@
 				// Cách 2: formData
 				const formData = new FormData(form);
 				const userInfor = Object.fromEntries(formData);
-				console.log(userInfor);
 
 				// validation
-				if (userInfor?.email || userInfor?.password) {
-					console.log("Khong dk bo trong");
+				if (!userInfor.email || !userInfor.password) {
+					alert("Khong dk bo trong");
+					return;
 				}
-				if (userInfor?.password.length < 8) {
-					console.log("Mat khau qua ngan");
+				if (userInfor.password.length < 8) {
+					alert("Mat khau qua ngan");
+					return;
 				}
 
 				// Luu vao trong localStorage.
 				// window.localStorage.setItem("email", userInfor.email);
 				// window.localStorage.setItem("password", userInfor.password);
 				localStorage.setItem("userInfor", JSON.stringify(userInfor));
+				if (confirm("Dang ky thanh cong, dang nhap ngay!")) {
+					location.href = "./login.html";
+				}
 			});
 
 			function login() {
