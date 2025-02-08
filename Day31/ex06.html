@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.dark-mode {
+				background-color: #333;
+				color: #eee;
+			}
+		</style>
+	</head>
+	<body class="dark-mode">
+		<button onclick="toggleTheme()">Toggle Theme</button>
+		<h1>Tieu de</h1>
+		<p class="content description">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab corrupti illo unde sit eaque consequatur,
+			numquam repudiandae hic aperiam rem atque, libero, perferendis totam! Ratione labore ut impedit dignissimos.
+		</p>
+		<script>
+			// className
+			// classList
+			// - add
+			// - remove
+			// - replace
+			// - toggle
+
+			let contentElement = document.getElementsByClassName("content")[0];
+			console.log(contentElement);
+			console.log(contentElement.className);
+			console.log(contentElement.classList);
+			function toggleTheme() {
+				document.body.classList.toggle("dark-mode");
+			}
+		</script>
+	</body>
+</html>
