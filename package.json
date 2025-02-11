@@ -1,0 +1,18 @@
+{
+	"name": "f8-k12",
+	"version": "1.0.0",
+	"description": "hoc lap trinh tai f8",
+	"main": "index.js",
+	"scripts": {
+		"start": "json-server --watch db.json --port 3000"
+	},
+	"keywords": [
+		"f8",
+		"nodejs"
+	],
+	"author": "hoangnm",
+	"license": "MIT",
+	"dependencies": {
+		"json-server": "^0.17.4"
+	}
+}
