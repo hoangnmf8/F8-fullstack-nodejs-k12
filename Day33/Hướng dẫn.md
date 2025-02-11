@@ -81,6 +81,6 @@ npm install json-server-auth
 
 ```json
 "scripts": {
-	"start": "json-server --watch db.json --port 3000 -m /node_modules/json-server-auth"
+	"start": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth"
 }
 ```
