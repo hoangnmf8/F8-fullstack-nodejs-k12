@@ -30,7 +30,7 @@ registerForm.addEventListener("submit", function (event) {
 				// Thong bao thanh cong
 				// Chuyen sang trang dang nhap
 				if (confirm("Dang ky thanh cong, dang nhap ngay?")) {
-					location.href = "login.html";
+					location.href = "./login.html";
 				}
 			} else {
 				alert(data);
