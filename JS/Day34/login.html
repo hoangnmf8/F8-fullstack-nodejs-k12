@@ -39,15 +39,14 @@
 		</form>
 		<script>
 			// Buoc 1: Lay du lieu tu form
-			const registerForm = document.getElementById("registerForm");
-			registerForm.addEventListener("submit", function (event) {
+			const loginForm = document.getElementById("loginForm");
+			loginForm.addEventListener("submit", function (event) {
 				event.preventDefault();
 
-				const user = Object.fromEntries(new FormData(registerForm));
-				console.log(user);
+				const user = Object.fromEntries(new FormData(loginForm));
 
 				// Buoc 2: Gui du lieu di server
-				fetch("http://localhost:3000/register", {
+				fetch("http://localhost:3000/login", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json",
@@ -57,7 +56,14 @@
 					.then((response) => response.json())
 					.then((data) => {
 						if (data.accessToken) {
-							location.href = "/login.html";
+							// thanh cong
+							localStorage.setItem("accessToken", data.accessToken);
+							localStorage.setItem("user", JSON.stringify(data.user));
+							location.href = "./index.html";
+						} else {
+							// dang nhap that bai
+							alert("Dang nhap that bai");
+							loginForm.reset();
 						}
 					})
 					.catch((err) => console.log(err));
