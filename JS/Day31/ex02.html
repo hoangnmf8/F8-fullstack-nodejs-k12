@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<a
+					data-id="1"
+					href=""
+					class="anchor-1"
+					title="Trang chu google"
+					style="background-color: red"
+					id="google-anchor"
+					>Home</a
+				>
+			</li>
+			<li><a href="">Products</a></li>
+			<li><a href="">Services</a></li>
+		</ul>
+		<script>
+			let liElementList = document.getElementsByTagName("li");
+			for (let i = 0; i < liElementList.length; i++) {
+				console.log((liElementList[i].children[0].href = "https://google.com"));
+				console.log(liElementList[i].children[0].attributes);
+			}
+		</script>
+	</body>
+</html>
