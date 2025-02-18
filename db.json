@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "email": "hoang77@gmail.com",
+      "password": "$2a$10$QHrHC5.p0219jntuJrqfBuaFXvfmhh48Pr.Gk5BQi.P89yzqV2lBi",
+      "id": 1
+    },
+    {
+      "email": "hoang78@gmail.com",
+      "password": "$2a$10$FW7kKrjZQkq.srdEBmmLi.1H2gNDCtexmQjQaI4iJLv29atR9hUmq",
+      "id": 2
+    },
+    {
+      "email": "hoang79@gmail.com",
+      "password": "$2a$10$zpK1g1xPBs84Fd8e.nO/JOOrbyqqKJvgkSjxlrdiVps7ai9bSYTHe",
+      "id": 3
+    },
+    {
+      "email": "hoang88@gmail.com",
+      "password": "$2a$10$my2dFk96UahWVUr/iKHPquNObp93Xx6b/wOAr1DAubRe76MRMCQUW",
+      "id": 4
+    }
+  ]
+}
