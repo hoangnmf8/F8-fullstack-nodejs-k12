@@ -5,6 +5,7 @@ import LoginPage from "./src/pages/LoginPage";
 import NotFoundPage from "./src/pages/NotFoundPage";
 import RegisterPage from "./src/pages/RegisterPage";
 import afterRegister from "./src/features/auths/afterRegister";
+import afterLogin from "./src/features/auths/afterLogin";
 
 const app = document.querySelector("#app");
 
@@ -18,13 +19,8 @@ function render(content, beforHandler = null, afterHandler = null) {
 
 router
 	.on({
-		"/": () =>
-			render(
-				HomePage,
-				() => console.log("Logic truoc khi gan component Homepage"),
-				() => console.log("Logic sau khi gan component Homepage")
-			),
-		"/login": () => render(LoginPage),
+		"/": () => render(HomePage),
+		"/login": () => render(LoginPage, null, afterLogin),
 		"/register": () => render(RegisterPage, null, afterRegister),
 	})
 	.notFound(() => render(NotFoundPage));

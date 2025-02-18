@@ -1,8 +1,4 @@
-import { router } from "../../main";
-
 function RegisterPage() {
-	setTimeout(() => {}, 0);
-
 	return /*html*/ `
     <form id="registerForm">
 			<div class="mb-3">

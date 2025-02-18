@@ -1,5 +1,5 @@
 function LoginPage() {
-	return /*html */ `
+	return /*html*/ `
     <form id="loginForm">
 			<h1>LOGIN</h1>
 			<div class="mb-3">

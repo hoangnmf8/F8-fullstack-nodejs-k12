@@ -1,6 +1,6 @@
 function HomePage() {
-	console.log("Trong component homepage");
-	return `
+	// logic fetchTasks
+	return /*html*/ `
   <div>
     <h1>Home page</h1>
   </div>
