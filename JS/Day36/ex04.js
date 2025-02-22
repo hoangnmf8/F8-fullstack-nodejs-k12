@@ -21,11 +21,11 @@ const fetch2 = () => {
 
 // Đua xem API nào trong số 2 API trên trả về nhanh hơn
 
-Promise.race([fetch1(), fetch2()])
-	.then(() => {
-		console.timeEnd("Nhanh nhat");
-	})
-	.catch((error) => {
-		console.log(error);
-		console.timeEnd("Nhanh nhat");
-	});
+// Promise.race([fetch1(), fetch2()])
+// 	.then(() => {
+// 		console.timeEnd("Nhanh nhat");
+// 	})
+// 	.catch((error) => {
+// 		console.log(error);
+// 		console.timeEnd("Nhanh nhat");
+// 	});
