@@ -25,3 +25,7 @@ npm i navigo
 ```
 
 - Cấu trúc lại file main.js
+
+**Tìm hiểu trước: asynchorous javascript, event loop, callback, promise, async/await**
+
+**Ôn tập: các cách làm việc với mảng, thao tác DOM, fetch(GET,POST, PATCH, DELETE)**
